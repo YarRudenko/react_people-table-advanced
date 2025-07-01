@@ -44,6 +44,14 @@ export const PeopleTable = ({ people, selectedSlug }: PeopleTableProps) => {
     return <i className="fas fa-sort-up" />;
   };
 
+  if (people.length === 0) {
+    return (
+      <p className="has-text-centered has-text-grey-light" data-cy="noMatches">
+        There are no people matching the current search criteria.
+      </p>
+    );
+  }
+
   return (
     <table
       data-cy="peopleTable"

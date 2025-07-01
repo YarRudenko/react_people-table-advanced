@@ -96,7 +96,7 @@ export const PeoplePage = () => {
   if (loading) {
     return (
       <div className="block">
-        <div className="box table-container" data-cy="loader">
+        <div data-cy="loader">
           <Loader />
         </div>
       </div>
@@ -117,7 +117,7 @@ export const PeoplePage = () => {
 
   return (
     <>
-      <h1 className="title">People Page</h1>
+      <h1 className="title mt-6">People Page</h1>
       <div className="block">
         <div className="columns is-desktop is-flex-direction-row-reverse">
           <div className="column is-7-tablet is-narrow-desktop">
